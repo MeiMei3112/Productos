@@ -1,0 +1,25 @@
+public class pago_tarjeta
+{
+Int num_tarjeta;
+double saldo;
+String nombre_titular;
+Int nip;
+{
+pago_tarjeta (String num_tarjeta, double saldo, String nombre_titular, Int nip)
+
+numero de tarjeta = num_tarjeta;
+Saldo = double saldo;
+Nombre del titular = nombre_titular;
+nip=nip;
+}
+public static void main(string[] args) {
+
+pago_tarjeta pago_tarjeta1;
+
+pago_tarjeta1 = new pago_tarjeta ("5678567843567689",27000.32,"alejandro",1789);
+
+pago_tarjeta2 = new pago_tarjeta  ("789765654789098",18998.24,"sonia",6754);
+    }
+System.out.println(pago_tarjeta1.Saldo);
+System.out.println(pago_tarjeta2.Saldo);
+}
