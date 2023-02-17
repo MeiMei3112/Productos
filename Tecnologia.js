@@ -1,4 +1,4 @@
-class Tecnologia extends PRoducto{
+class Tecnologia extends Producto{
     modelo;
     color;
     dimension;

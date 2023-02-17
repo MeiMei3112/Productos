@@ -1,4 +1,4 @@
-class PRoducto{
+class Producto{
     precio;
     nombrepPoducto;
     #codigoBarra;

@@ -1,4 +1,4 @@
-class Comida extends PRoducto{
+class Comida extends Producto{
     tipo;
     caducidad;
     peso;
