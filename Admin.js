@@ -8,7 +8,7 @@ class Admin {
     constructor(name,lastname){
         this.Nombre =name;
         this.id =  this.crearId();
-        this.Apellidos=lastname();
+        this.Apellidos=lastname;
         this.#correo=this.actualizarCorreo();
         this.#password=this.actualizarPassword();
     }
@@ -38,4 +38,5 @@ class Admin {
 guardarAdmin = function(nuevoAdmin){
     let admins =  this.#admin;
     admins.push(nuevoAdmin);
+}
 }

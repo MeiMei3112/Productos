@@ -1,4 +1,4 @@
-class Jugeteria extends Producto{
+class Jugueteria extends Producto{
     material;
     rango_edad;
     categoria;
