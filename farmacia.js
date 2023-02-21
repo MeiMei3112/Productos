@@ -3,8 +3,8 @@ class Farmacia extends Producto{
     tipo_de_administracion;
     solo_con_receta;
     tipo_de_pureza;
-    constructor (cont, tipoad, receta, tipopurez)
-    super(){
+    constructor (cont, tipoad, receta, tipopurez){
+    super(prc,np,cb,mrc,ar);
     this.Contenido = cont;
     this.Tipo_de_administrador = tipoad;
     this.Solo_con_receta = receta;

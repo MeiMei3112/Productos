@@ -1,6 +1,6 @@
 class Producto{
     precio;
-    nombrepPoducto;
+    nombreproducto;
     #codigoBarra;
     marca;
     area;
