@@ -5,7 +5,6 @@ class Tecnologia extends Producto{
     conexion;
     garantia;
     constructor(mdl,clr,dmnsn,cnxn,grnt){
-        super(prc,np,cb,mrc,ar);
         this.modelo = mdl;
         this.color = clr;
         this.dimension = dmnsn;
