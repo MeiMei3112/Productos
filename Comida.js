@@ -10,3 +10,11 @@ class Comida extends Producto{
     this.ingredientes = ingrdnts;
     }
 }
+function eliminarComida(idComida){
+    let result = comida.findIndex(({ id }) => id === idComida);
+    if(result > -1){
+        comida.splice(result, 1);
+      }
+    Tool.setDataToLocalStorage('comida', Comida);
+    window.location.reload();
+}

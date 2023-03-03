@@ -10,3 +10,11 @@ class Farmacia extends Producto{
     this.Tipo_de_pureza = tipopurez;
     }
 }
+function eliminarFarmacia(idFarmacia){
+    let result = farmacia.findIndex(({ id }) => id === idFarmacia);
+    if(result > -1){
+        Farmacia.splice(result, 1);
+      }
+    Tool.setDataToLocalStorage('farmacia', Farmacia);
+    window.location.reload();
+  }

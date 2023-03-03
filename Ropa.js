@@ -13,3 +13,11 @@ class Ropa extends Producto{
         this.temporada = tmprd;
     }
 }
+function eliminarRopa(idRopa){
+    let result = ropa.findIndex(({ id }) => id === idRopa);
+    if(result > -1){
+        Ropa.splice(result, 1);
+      }
+    Tool.setDataToLocalStorage('ropa', Ropa);
+    window.location.reload();
+}
