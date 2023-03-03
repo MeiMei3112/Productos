@@ -5,25 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido</title>
+    <title>Almacenes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
+</style>
+    </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <h2 class="center" style="color:gray;">Inventario/Almacén</h2>    
+        <h2 class="center" style="color:rgb(211, 24, 24);">Almacenes INT</h2>    
     </nav>
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="text-center">Admin</h4>
+                        <h4 class="text-center" style="color:blue">Admin</h4>
                     </div>
                     <div class="card-body">
 
-                        <div class="form-group">
+                        <div class="Admin">
                             <label for="name">Nombre(s)</label>
                             <input class="form-control" name="name" id="name" placeholder="Ingrese su nombre(s)">
                         </div>
@@ -42,27 +43,33 @@
                         <div>
                             <label></label>
                         </div>
-                        <button class="btn btn-primary" onclick="guardarAdmin()">Guardar</button>
+                        <button class="btn btn-primary" onclick="guardarAdmin()">Ingresar</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header">
-                        <h4 class="text-center">Producto</h4>
+                    <div class="Producto">
+                        <h4 class="text-center" style="color:brown">Producto</h4>
                     </div>
                     <div class="card-body">
                         <div>
                             <label for="nameprod">Nombre</label>
-                            <input class="form-control" type="text" name="nameprod" id="nameprod">
+                            <input class="form-control" type="text" name="nameprod" id="nameprod" placeholder="Ayuda">
                         </div>
                         <div>
                             <label for="cod">Código de Barras</label>
-                            <input class="form-control" type="text" name="cod" id="cod">
+                            <input class="form-control" type="text" name="cod" id="cod" placeholder="Como cambio de carrera">
                         </div>
                         <div>
                             <label for="area">Área</label>
-                            <select class="form-control form-select" name="area" id="area">
+                            <select class="form-control form-select" name="area" id="area" > 
+                                <option disabled selected>Area del producto</option>
+                                <option>Comida</option>
+                                <option>Jugeteria</option>
+                                <option>Farmacia</option>
+                                <option>Ropa</option>
+                                <option>Tecnologia</option>
                             </select>
                         </div>
                         <div>
