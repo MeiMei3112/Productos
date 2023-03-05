@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(fondo2.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.boton {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    padding: 5% 50px;
+    font-family: 'calibri', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    animation: animacion 2s linear infinite;
+    cursor: pointer;
+}
+
+.boton2 {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    padding: 5% 50px;
+    font-family: 'calibri', sans-serif;
+    text-transform: uppercase;
+    animation: animacion 2s linear infinite;
+    cursor: pointer;
+}
+
+.boton3 {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    padding: 5% 50px;
+    font-family: 'calibri', sans-serif;
+    text-transform: uppercase;
+    animation: animacion 2s linear infinite;
+    cursor: pointer;
+}
+
+.titulo{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes animacion {
+    0% {
+        box-shadow: 0 0 0 0 rgba(29, 171, 209, .6), 0 0 0 0 rgba(29, 171, 209, .6);
+    }
+
+    30% {
+        box-shadow: 0 0 0 50px rgba(29, 171, 209, 0), 0 0 0 0 rgba(29, 171, 209, .6);
+    }
+    
+    65% {
+        box-shadow: 0 0 0 50px rgba(29, 171, 209, 0), 0 0 0 300px rgba(29, 171, 209, 0);
+
+    }    
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(29, 171, 209, 0), 0 0 0 300px rgba(29, 171, 209, 0);
+    }
+    
+}

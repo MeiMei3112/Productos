@@ -5,6 +5,7 @@
 }
 
 .Admin{
+    font-family: Impact;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +16,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    gap: 60px;
+    gap: 70px;
 }
 
 input{
@@ -60,6 +61,7 @@ input{
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.8), 0 5px 5px 0 rgba(0,0,0,0.2);
     border-radius: 15px;
 }
+
  .titulo{
     background-color: azure;
     max-width: 200px;
