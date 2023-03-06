@@ -11,7 +11,7 @@ class Comida extends Producto{
     }
 }
 function eliminarComida(idComida){
-    let result = comida.findIndex(({ id }) => id === idComida);
+    let result = Comida.findIndex(({ id }) => id === idComida);
     if(result > -1){
         comida.splice(result, 1);
       }

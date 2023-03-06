@@ -1,7 +1,7 @@
 class Producto{
     precio;
     nombreproducto;
-    #codigoBarra;
+    codigoBarra;
     marca;
     area;
     constructor(prc,np,cb,mrc,ar){

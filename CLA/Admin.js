@@ -2,9 +2,9 @@ class Admin {
     id;
     Nombre;
     Apellidos;
-    #correo;
-    #password;
-    #admin = [];
+    correo;
+    password;
+    admin = [];
     constructor(name,lastname){
         this.Nombre =name;
         this.id =  this.crearId();
@@ -18,14 +18,14 @@ class Admin {
     * @param {string} correo 
     */ 
    actualizarCorreo = function(correo){
-    this.#correo = correo;
+    this.correo = correo;
 }
 /**
     * 
     * @param {string} password
     */ 
    actualizarPassword = function(password){
-    this.#password = password;
+    this.password = password;
 }
    /**
      * 
@@ -36,7 +36,7 @@ class Admin {
     return  name.charAt(0) + Math.floor(Math.random() * 1000);
 }
 guardarAdmin = function(nuevoAdmin){
-    let admins =  this.#admin;
+    let admins =  this.admin;
     admins.push(nuevoAdmin);
 }
 }

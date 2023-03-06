@@ -14,7 +14,7 @@ class Ropa extends Producto{
     }
 }
 function eliminarRopa(idRopa){
-    let result = ropa.findIndex(({ id }) => id === idRopa);
+    let result = Ropa.findIndex(({ id }) => id === idRopa);
     if(result > -1){
         Ropa.splice(result, 1);
       }
