@@ -12,3 +12,22 @@ function login(){
         alert("Usuario o contraseña incorrecto")
     }
 }
+
+function producto (){
+    const producto = new Comida('Juan', 30);
+localStorage.setItem('myObject', JSON.stringify(producto));
+
+
+const storedData = localStorage.getItem('myObject');
+
+
+if (!storedData) {
+  console.log('No hay datos disponibles');
+} else {
+
+  const parsedData = JSON.parse(storedData);
+
+
+  console.log(`Nombre: ${parsedData.name}, Edad: ${parsedData.age}`);
+}
+}

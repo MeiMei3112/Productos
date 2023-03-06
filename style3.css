@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(fondo2.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.comida {
+    background-color: rgba(255, 255, 255, 0.472);
+    width: 200px;
+}
+.farmacia {
+    background-color: rgba(255, 255, 255, 0.472);
+    width: 200px;
+}
+.jugeteria {
+    background-color: rgba(255, 255, 255, 0.472);
+    width: 200px;
+}
