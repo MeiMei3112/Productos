@@ -2,23 +2,16 @@ class Admin {
     id;
     Nombre;
     Apellidos;
-    correo;
     password;
     admin = [];
     constructor(name,lastname){
         this.Nombre =name;
         this.id =  this.crearId();
         this.Apellidos=lastname;
-        this.#correo=this.actualizarCorreo();
-        this.#password=this.actualizarPassword();
+        this.password=this.actualizarPassword();
     }
 
-   /**
-    * 
-    * @param {string} correo 
-    */ 
-   actualizarCorreo = function(correo){
-    this.correo = correo;
+   
 }
 /**
     * 

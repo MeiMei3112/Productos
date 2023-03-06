@@ -1,10 +1,9 @@
 class Ropa extends Producto{
     talla;
     color;
-    modelo;
     tipoTela;
     temporada;
-    constructor(tll, clr, mdl, tt,tmprd){
+    constructor(tll, clr, tt,tmprd){
         super(prc,np,cb,mrc,ar);
         this.talla = tll;
         this.color = clr;
