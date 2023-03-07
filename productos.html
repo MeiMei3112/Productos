@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Supermercado</title>
+    <script src="supermercado.js"></script>
+  </head>
+  <body>
+    <h1>Supermercado</h1>
+    <p>Agregar producto:</p>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre">
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad">
+    <label for="precio">Precio:</label>
+    <input type="number" step="0.01" id="precio">
+    <button onclick="agregarProducto()">Agregar</button>
+    <hr>
+    <p>Eliminar producto:</p>
+    <label for="nombre-eliminar">Nombre:</label>
+    <input type="text" id="nombre-eliminar">
+    <button onclick="eliminarProducto()">Eliminar</button>
+    <hr>
+    <p>Buscar producto:</p>
+    <label for="nombre-buscar">Nombre:</label>
+    <input type="text" id="nombre-buscar">
+    <button onclick="buscarProducto()">Buscar</button>
+    <div id="resultado-buscar"></div>
+    <hr>
+    <p>Actualizar cantidad:</p>
+    <label for="nombre-actualizar">Nombre:</label>
+    <input type="text" id="nombre-actualizar">
+    <label for="cantidad-actualizar">Cantidad:</label>
+    <input type="number" id="cantidad-actualizar">
+    <button onclick="actualizarCantidad()">Actualizar</button>
+    <hr>
+    <p>Valor del inventario:</p>
+    <div id="valor-inventario"></div>
+    <script>
+      const supermercado = new Supermercado();
+
+      function agregarProducto() {
+        const nombre = document.getElementById("nombre").value;
+        const cantidad = parseInt(document.getElementById("cantidad").value);
+        const precio = parseFloat(document.getElementById("precio").value);
+        supermercado.agregarProducto(nombre, cantidad, precio);
+      }
+
+      function eliminarProducto() {
+        const nombre = document.getElementById("nombre-eliminar").value;
+        supermercado.eliminarProducto(nombre);
+      }
+
+      function buscarProducto() {
+        const nombre = document.getElementById("nombre-buscar").value;
+        const producto = supermercado.buscarProducto(nombre);
+        const resultado = document.getElementById("resultado-buscar");
+        if (producto) {
+          resultado.innerText = `Producto encontrado: ${producto.getNombre()}, Cantidad: ${producto.getCantidad()}, Precio: ${producto.getPrecio()}`;
+        } else {
+          resultado.innerText = "Producto no encontrado";
+        }
+      }
+
+      function actualizarCantidad() {
+        const nombre = document.getElementById("nombre-actualizar").value;
+        const cantidad = parseInt(document.getElementById("cantidad-actualizar").value);
+        supermercado.actualizarCantidad(nombre, cantidad);
+      }
+
+      function mostrarValorInventario() {
+        const valor = supermercado.calcularValorInventario();
+        const resultado = document.getElementById("valor-inventario");
+        resultado.innerText = `Valor del inventario: $${valor.toFixed(2)}`;
+      }
+
+      mostrarValorInventario(); // Actualizar el valor del inventario al cargar la página
+    </script>
+  </body>
+</html>
