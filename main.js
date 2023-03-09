@@ -6,9 +6,9 @@ function login(){
     apellido = document.getElementById("apellido").value;
     password = document.getElementById("contraseña").value;
 
-    if(nombre == "E" && apellido == "l" && password == "1234"){
+    if(nombre == "E" && apellido == "P" && password == "1"){
         alert("Bienvenido a los mas Belicos de la Upt")
-        window.location = "index2.html";
+        window.location = "productos.html";
     } else{
         alert("Usuario o contraseña incorrecto")
     }
